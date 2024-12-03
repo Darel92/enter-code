@@ -79,3 +79,36 @@
         }
     </style>
 </head>
+<body>
+
+<div class="container">
+    <h1>DAREL HOSTING</h1>
+    <p>Masukkan kode login Anda untuk melanjutkan</p>
+    <input type="password" id="loginCode" placeholder="Enter code">
+    <br>
+    <button onclick="checkCode()">Login</button>
+    <a id="panelButton" href="https://panell.darell.my.id" target="_blank">
+        <button>Go to Panel</button>
+    </a>
+</div>
+
+<!-- Link WhatsApp dengan logo dan teks -->
+<a href="https://wa.me/62882007832788" target="_blank" class="wa-link">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    Hubungi Admin
+</a>
+
+<script>
+    function checkCode() {
+        const code = document.getElementById('loginCode').value;
+        if (code === 's6n°¥Hu905B-#dXjD#-8/@') {
+            alert('Login berhasil!');
+            document.getElementById('panelButton').style.display = 'inline-block';
+        } else {
+            alert('Kode salah, coba lagi.');
+        }
+    }
+</script>
+
+</body>
+</html>
