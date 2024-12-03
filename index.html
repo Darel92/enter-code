@@ -89,7 +89,7 @@
     <p>Masukkan kode login Anda untuk melanjutkan</p>
     <input type="password" id="loginCode" placeholder="Enter code">
     <br>
-    <button onclick="checkCode()" class="btn">Login</button>
+    <button id="loginButton" onclick="checkCode()" class="btn">Login</button>
     <a id="panelButton" href="https://panell.darell.my.id" target="_blank" class="btn">
         Go to Panel
     </a>
@@ -106,7 +106,8 @@
         const code = document.getElementById('loginCode').value;
         if (code === 's6n°¥Hu905B-#dXjD#-8/@') {
             alert('Login berhasil!');
-            document.getElementById('panelButton').style.display = 'inline-block';
+            document.getElementById('loginButton').style.display = 'none'; // Sembunyikan tombol Login
+            document.getElementById('panelButton').style.display = 'inline-block'; // Tampilkan tombol Go to Panel
         } else {
             alert('Kode salah, coba lagi.');
         }
