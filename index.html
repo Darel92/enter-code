@@ -42,23 +42,26 @@
             font-size: 16px;
             text-align: center;
         }
-        button {
-            background: #ff416c;
+        .btn {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
             border: none;
-            padding: 12px 25px;
+            padding: 15px 30px;
             border-radius: 50px;
             color: #fff;
             font-size: 18px;
+            font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s ease;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
         }
-        button:hover {
-            background: #ff4b2b;
+        .btn:hover {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            transform: scale(1.05);
         }
         #panelButton {
             display: none;
-            margin-top: 20px;
-            background: #28a745;
         }
         .wa-link {
             display: flex;
@@ -86,9 +89,9 @@
     <p>Masukkan kode login Anda untuk melanjutkan</p>
     <input type="password" id="loginCode" placeholder="Enter code">
     <br>
-    <button onclick="checkCode()">Login</button>
-    <a id="panelButton" href="https://panell.darell.my.id" target="_blank">
-        <button>Go to Panel</button>
+    <button onclick="checkCode()" class="btn">Login</button>
+    <a id="panelButton" href="https://panell.darell.my.id" target="_blank" class="btn">
+        Go to Panel
     </a>
 </div>
 
